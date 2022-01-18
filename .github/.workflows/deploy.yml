@@ -1,50 +1,42 @@
-# .github/workflows/deploy.yml
-
-name: GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deploy.yml'
-      - 'website/**'
   pull_request:
+    branches: [main]
+  push:
+    branches: [main]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    defaults:
-      run:
-        working-directory: website
+  test-deploy:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: '16'
-
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
+          node-version: 16.x
+          cache: yarn
+      - name: Test deployment
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-website-
-
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+          node-version: 16.x
+          cache: yarn
+      - uses: webfactory/ssh-agent@v0.5.0
         with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./website/build
+          ssh-private-key: ${{ secrets.TOKEN }}
+      - name: Deploy to GitHub Pages
+        env:
+          USE_SSH: true
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions"
+          yarn install --frozen-lockfile
+          yarn deploy
