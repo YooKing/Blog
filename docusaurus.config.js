@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Yooking',
-  tagline: 'Dinosaursd ',
+  tagline: '待开发',
   url: 'https://yooking.top/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
