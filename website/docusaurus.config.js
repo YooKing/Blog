@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Yooking',
   tagline: 'Dinosaurs are cool',
-  url: 'https://yooking.github.io/',
+  url: 'https://yooking.top/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
