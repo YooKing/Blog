@@ -8,14 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Yooking',
   tagline: 'Dinosaurs are cool',
-  url: 'https://yooking.top',
+  url: 'https://yooking.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'YooKing', // Usually your GitHub org/user name.
   projectName: 'yooking.github.io', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
   presets: [
     [
       '@docusaurus/preset-classic',
