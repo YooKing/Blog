@@ -45,15 +45,17 @@ const config = {
         title: 'Yooking',
         logo: {
           alt: 'Yooking',
-          src: 'img/logo.svg',
+          src: 'img/1.png',
         },
         items: [
+/*         
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
           },
+*/
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/YooKing',
