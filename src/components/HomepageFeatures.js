@@ -20,7 +20,7 @@ const FeatureList = [
 
       
       <a class="button button--primary" href="https://afdian.net/@ykmc25565" target="_blank">去爱发电捐款</a>
-      <a class="button button--primary" href="https://www.patreon.com/yklove" target="_blank">去Patreon捐款</a>
+     
       
       </>
     ),
