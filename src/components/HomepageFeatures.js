@@ -8,7 +8,7 @@ const FeatureList = [
     description: (
       <>
         我创建了一个我的世界公益服YKMC，用纯净版或下载专用客户端开玩！
-        <a class="button button--primary" href="https://yoomc.top" target="_blank">YKMC</a>
+        <a class="button button--primary" href="https://mc.yooking.top" target="_blank">YKMC</a>
       </>
     ),
   },
