@@ -45,7 +45,7 @@ const config = {
         title: 'Yooking',
         logo: {
           alt: 'Yooking',
-          src: 'img/1.png',
+          src: 'img/ykmclogo.png',
         },
         items: [
 /*         
