@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: '',
   organizationName: 'YooKing', // Usually your GitHub org/user name.
   projectName: 'yooking.github.io', // Usually your repo name.
   presets: [
