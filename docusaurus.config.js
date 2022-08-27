@@ -89,7 +89,7 @@ const config = {
               },
               {
                 label: 'YKMC',
-                to: 'http://mc.yooking.top/',
+                href: 'http://mc.yooking.top/',
               },
             ],
           },
