@@ -9,6 +9,7 @@ const config = {
   title: 'Yooking',
   tagline: '待开发',
   url: 'https://yooking.top/',
+  favicon: 'img/2.png',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
