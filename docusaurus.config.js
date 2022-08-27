@@ -9,7 +9,7 @@ const config = {
   title: 'Yooking',
   tagline: '待开发',
   url: 'https://yooking.top/',
-  favicon: 'img/2.png',
+  favicon: 'img/2.svg',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -86,6 +86,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/YooKing',
+              },
+              {
+                label: 'YKMC',
+                to: 'http://mc.yooking.top/',
               },
             ],
           },
