@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -42,14 +42,16 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/YooKing/yooking.github.io/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+          routeBasePath: "/",
+          blogSidebarTitle: '最近博文',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/YooKing/yooking.github.io/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,72 +64,79 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/ykmclogo.png',
       navbar: {
-        title: 'My Site',
+        title: 'YooKing',
         logo: {
           alt: 'My Site Logo',
           src: 'img/ykmclogo.png',
         },
         items: [
           {
+            position: 'right',
+            label: '博客',
+            items:[
+              {
+                label: '标签',
+                to: 'tags',
+              },
+              {
+                label: '归档',
+                to: 'archive',
+              }            
+            ]
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
             position: 'right',
-          },
+            label: '文档',
+          }
+           
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: '页面',
             items: [
               {
-                label: 'Tutorial',
+                label: '博客',
+                to: '/',
+              },
+          
+              {
+                label: '文档',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社交媒体',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '关于我',
+                href: '/about',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Github',
+                href: 'https://github.com/YooKing',
+              }             
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+                label: '友情链接',
+                to: '/friends',
+              }
+             
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Yooking. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
