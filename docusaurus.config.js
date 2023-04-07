@@ -46,7 +46,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          routeBasePath: "/",
           blogSidebarTitle: '最近博文',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -78,11 +77,11 @@ const config = {
             items:[
               {
                 label: '标签',
-                to: 'tags',
+                to: 'blog/tags',
               },
               {
                 label: '归档',
-                to: 'archive',
+                to: 'blog/archive',
               }            
             ]
           },
@@ -103,13 +102,14 @@ const config = {
             items: [
               {
                 label: '博客',
-                to: '/',
+                to: '/blog',
               },
           
               {
                 label: '文档',
-                to: '/docs/intro',
+                to: '/docs/index',
               },
+              
             ],
           },
           {
@@ -131,7 +131,15 @@ const config = {
               {
                 label: '友情链接',
                 to: '/friends',
-              }
+              },
+              {
+                label: 'YKMC',
+                href: 'https://mc.yooking.top',
+              },
+              {
+                label: 'ChatGPT',
+                href: 'https://gpt.yooking.top',
+              },
              
             ],
           },
