@@ -107,7 +107,7 @@ const config = {
           
               {
                 label: '文档',
-                to: '/docs/index',
+                to: '/docs/gpt/',
               },
               
             ],
