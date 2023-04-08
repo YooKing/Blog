@@ -25,7 +25,7 @@ function Homepage() {
         </div>
       </div>
       <div className='right' style={{display: 'flex',justifyContent: 'center', alignItems: 'center'}}>
-        <img src="img/undraw_Multitasking_re_ffpb.svg" alt="placeholder" style={{ maxHeight: '100%', maxWidth: '100%' }} />
+        <img src="img/undraw_multitasking_re_ffpb.svg" alt="placeholder" style={{ maxHeight: '100%', maxWidth: '100%' }} />
       </div>
   
     </div>
