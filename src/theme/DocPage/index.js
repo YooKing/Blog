@@ -14,7 +14,7 @@ import {
 import DocPageLayout from '@theme/DocPage/Layout';
 import NotFound from '@theme/NotFound';
 import SearchMetadata from '@theme/SearchMetadata';
-import Giscus from '@giscus/react';
+import Comment from '@site/src/components/Comment'
 function DocPageMetadata(props) {
   const {versionMetadata} = props;
   return (
@@ -54,21 +54,7 @@ export default function DocPage(props) {
         <DocsVersionProvider version={versionMetadata}>
           <DocsSidebarProvider name={sidebarName} items={sidebarItems}>
             <DocPageLayout>{docElement}
-            <Giscus
-      id="comments"
-      repo="YooKing/giscus.blog"
-      repoId="R_kgDOJUNk3Q"
-      category="Announcements"
-      categoryId="DIC_kwDOJUNk3c4CVoRt"
-      mapping="pathname"
-      term="Welcome to @giscus/react component!"
-      reactionsEnabled="1"
-      emitMetadata="0"
-      inputPosition="top"
-      theme="light"
-      lang="zh-CN"
-      loading="lazy"
-    /></DocPageLayout>
+            <Comment/></DocPageLayout>
           </DocsSidebarProvider>
         </DocsVersionProvider>
         

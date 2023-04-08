@@ -7,7 +7,8 @@ import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
-import Giscus from '@giscus/react';
+import Comment from '@site/src/components/Comment'
+
 function BlogPostPageContent({sidebar, children}) {
   const {metadata, toc} = useBlogPost();
   const {nextItem, prevItem, frontMatter} = metadata;
@@ -33,7 +34,7 @@ function BlogPostPageContent({sidebar, children}) {
       {(nextItem || prevItem) && (
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />
       )}
-      <Giscus
+      {/* <Giscus
       id="comments"
       repo="YooKing/giscus.blog"
       repoId="R_kgDOJUNk3Q"
@@ -44,10 +45,11 @@ function BlogPostPageContent({sidebar, children}) {
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
-      theme="light"
+      theme= {giscusTheme}
       lang="zh-CN"
       loading="lazy"
-    />
+    /> */}
+    <Comment/>
     </BlogLayout>
     
   );
