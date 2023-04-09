@@ -1,8 +1,8 @@
 ---
-slug: New start
-title: New start
+slug: 新开始
+title: 新开始
 authors: [yooking]
-tags: [Random Thoughts]
+tags: [随想]
 ---
 
 换了一个新博客，准备一个新开始
