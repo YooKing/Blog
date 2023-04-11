@@ -1,7 +1,7 @@
 export const Friends: Friend[] = [
   {
     title: 'Yooking',
-    description: 'Me',
+    description: '我',
     website: 'https://yooking.top',
     avatar: '/img/friend/1.png',
   },
