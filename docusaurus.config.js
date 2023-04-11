@@ -145,7 +145,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Yooking. Built with Docusaurus.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} Yooking, 使用 Docusaurus 搭建。`,
       },
       prism: {
         theme: lightCodeTheme,
