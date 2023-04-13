@@ -1,7 +1,7 @@
 ---
 # title: 新开始
 authors: [yooking]
-tags: [照片,旅游]
+tags: [照片,旅游,视频]
 ---
 
 
