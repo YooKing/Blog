@@ -59,9 +59,14 @@ const config = {
           trackingID: 'G-MX335S1FD6',
           anonymizeIP: false,
         },
-        {
         googleTagManager: {
           containerId: 'GTM-PCWBK64',
+        },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
 
       }),       
