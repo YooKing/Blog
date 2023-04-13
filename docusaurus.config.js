@@ -75,6 +75,7 @@ const config = {
           {
             position: 'right',
             label: '博客',
+            to:'blog/'
             items:[
               {
                 label: '标签',
