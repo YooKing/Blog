@@ -94,7 +94,7 @@ const Search = props => {
         id="search_input_react"
         type="search"
         placeholder={indexReady ? 'Search' : 'Loading...'}
-        aria-label="Search"
+        aria-label="搜索"
         className={classnames(
           "navbar__search-input",
           { "search-bar-expanded": props.isSearchBarExpanded },
