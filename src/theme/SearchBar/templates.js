@@ -76,7 +76,7 @@ const templates = {
         <div class="${suggestionPrefix}--content ${suggestionPrefix}--no-results">
             <div class="${suggestionPrefix}--title">
                 <div class="${suggestionPrefix}--text">
-                    No results found for query <b>"{{query}}"</b>
+                    查询<b>"{{query}}"</b>未找到结果。
                 </div>
             </div>
         </div>
