@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import './Homepage.css';
 import { FaGithub} from 'react-icons/fa';
-import { MdEmail } from "react-icons/md";
+import { MdEmail,MdRssFeed } from "react-icons/md";
 
 function Homepage() {
   const { siteConfig, primaryColor } = useDocusaurusContext();
@@ -21,6 +21,9 @@ function Homepage() {
           </a>
           <a href='mailto:yooking.id@outlook.com' target="_blank" rel="noopener noreferrer">
             <MdEmail style={{ fontSize: 25, color: primaryColor }} /> 
+          </a>
+           <a href='https://yooking.top/blog/rss.xml' target="_blank" rel="noopener noreferrer">
+            <MdRssFeed style={{ fontSize: 25, color: primaryColor }} /> 
           </a>
         </div>
       </div>
