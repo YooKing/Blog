@@ -90,12 +90,28 @@ const config = {
               }            
             ]
           },
+          
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'right',
             label: '文档',
-          }
+          },
+          
+          {
+            position: 'right',
+            label: '项目',
+            items:[
+              {
+                label: 'YKMC',
+                href: 'https://mc.yooking.top',
+              },
+              {
+                label: 'ChatGPT',
+                href: 'https://gpt.yooking.top',
+              }            
+            ]
+          },
            
         ],
       },
