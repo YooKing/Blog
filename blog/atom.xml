@@ -32,6 +32,7 @@
         </author>
         <category label="照片" term="照片"/>
         <category label="旅游" term="旅游"/>
+        <category label="视频" term="视频"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[上海半日游]]></title>
