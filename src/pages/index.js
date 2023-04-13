@@ -4,8 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import './Homepage.css';
-import { FaGithub} from 'react-icons/fa';
-import { MdEmail,MdRssFeed } from "react-icons/md";
+import { FaGithub, FaEnvelope, FaRss } from 'react-icons/fa';
 
 function Homepage() {
   const { siteConfig, primaryColor } = useDocusaurusContext();
@@ -19,11 +18,11 @@ function Homepage() {
           <a href="https://github.com/YooKing" target="_blank" rel="noopener noreferrer" style={{ marginRight: 20 }}>
             <FaGithub style={{ fontSize: 25, color: primaryColor }} />
           </a>
-          <a href='mailto:yooking.id@outlook.com' target="_blank" rel="noopener noreferrer">
-            <MdEmail style={{ fontSize: 25, color: primaryColor }} /> 
+          <a href='mailto:yooking.id@outlook.com' target="_blank" rel="noopener noreferrer" style={{ marginRight: 20 }}>
+            <FaEnvelope style={{ fontSize: 25, color: primaryColor }} /> 
           </a>
            <a href='https://yooking.top/blog/rss.xml' target="_blank" rel="noopener noreferrer">
-            <MdRssFeed style={{ fontSize: 25, color: primaryColor }} /> 
+            <FaRss style={{ fontSize: 25, color: primaryColor }} /> 
           </a>
         </div>
       </div>
