@@ -59,6 +59,11 @@ const config = {
           trackingID: 'G-MX335S1FD6',
           anonymizeIP: false,
         },
+        {
+        googleTagManager: {
+          containerId: 'GTM-PCWBK64',
+        },
+
       }),       
     ],
    
