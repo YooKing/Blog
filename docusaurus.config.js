@@ -31,6 +31,9 @@ const config = {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN'],
   },
+  plugins: [[require.resolve('docusaurus-lunr-search'), {
+    languages: ['zh'], indexBaseUrl: true
+  }]],
 
   presets: [
     [
