@@ -170,6 +170,10 @@ const config = {
                 href: '/about',
               },
               {
+                label: '友情链接',
+                to: '/friends',
+              },
+              {
                 label: 'Github',
                 href: 'https://github.com/YooKing',
               }             
@@ -179,16 +183,16 @@ const config = {
             title: '更多',
             items: [
               {
-                label: '友情链接',
-                to: '/friends',
-              },
-              {
                 label: 'YKMC',
                 href: 'https://mc.yooking.top',
               },
               {
                 label: 'ChatGPT',
                 href: 'https://gpt.yooking.top',
+              },
+              {
+                label: 'Alist',
+                href: 'https://alist.yooking.top',
               },
              
             ],
