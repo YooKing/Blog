@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yooking.top/blog</id>
     <title>Yooking Blog</title>
-    <updated>2023-04-05T00:00:00.000Z</updated>
+    <updated>2023-04-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yooking.top/blog"/>
     <subtitle>Yooking Blog</subtitle>
     <icon>https://yooking.top/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[梵高再现]]></title>
+        <id>https://yooking.top/blog/2023/04/30/梵高再现</id>
+        <link href="https://yooking.top/blog/2023/04/30/梵高再现"/>
+        <updated>2023-04-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[五一假期，早上前往世博会博物馆参观“梵高再现展览”以及世博展览。]]></summary>
+        <content type="html"><![CDATA[<p>五一假期，早上前往世博会博物馆参观“梵高再现展览”以及世博展览。</p><p>![<!-- -->[IMG_9114.JPG]<!-- -->]![<!-- -->[IMG_9117.JPG]<!-- -->]![<!-- -->[IMG_9122.JPG]<!-- -->]![<!-- -->[IMG_9145.JPG]<!-- -->]</p><video width="100%" controls="" src="/video/IMG_9152.MP4"></video><video width="100%" controls="" src="/video/IMG_9166.MP4"></video><p>![<!-- -->[IMG_9168.JPG]<!-- -->]![<!-- -->[IMG_9174.JPG]<!-- -->]![<!-- -->[IMG_9177.JPG]<!-- -->]![<!-- -->[IMG_9190.JPG]<!-- -->]![<!-- -->[IMG_9192.JPG]<!-- -->]![<!-- -->[IMG_9203.png]<!-- -->]</p>]]></content>
+        <author>
+            <name>yooking</name>
+            <uri>https://github.com/YooKing</uri>
+        </author>
+        <category label="照片" term="照片"/>
+        <category label="旅游" term="旅游"/>
+        <category label="视频" term="视频"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[苏州一日游]]></title>
         <id>https://yooking.top/blog/2023/04/05/苏州一日游</id>
