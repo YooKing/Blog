@@ -7,7 +7,7 @@ tags: [照片,旅游,视频]
 
 ![](./IMG_9114.JPG)![](./IMG_9117.JPG)![](./IMG_9122.JPG)![](./IMG_9145.JPG)
 
-<video width="100%" controls src="/video/IMG_9152.mp4"></video>
-<video width="100%" controls src="/video/IMG_9166.mp4"></video>
+<video width="100%" controls src="/video/IMG_9152.mkv"></video>
+<video width="100%" controls src="/video/IMG_9166.mkv"></video>
 
 ![](IMG_9168.JPG)![](./IMG_9174.JPG)![](./IMG_9177.JPG)![](IMG_9190.JPG)![](./IMG_9192.JPG)![](./IMG_9203.png)
