@@ -62,6 +62,7 @@ const config = {
         blog: {
           showReadingTime: true,
           blogSidebarTitle: '最近博文',
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
