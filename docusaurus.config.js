@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Yukun\'s Blog',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -30,7 +30,7 @@ const config = {
   organizationName: 'YooKing', // Usually your GitHub org/user name.
   projectName: 'Blog', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -55,6 +55,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          routeBasePath: '/',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -93,7 +94,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
