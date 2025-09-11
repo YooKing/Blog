@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_123=self.webpackChunk_123||[]).push([[68],{4240:a=>{a.exports=JSON.parse('{"tag":{"label":"\u968f\u60f3","permalink":"/tags/\u968f\u60f3","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/\u968f\u60f3","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
